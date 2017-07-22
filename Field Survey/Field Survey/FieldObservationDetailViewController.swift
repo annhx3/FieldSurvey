@@ -14,11 +14,12 @@ class FieldObservationDetailViewController: UIViewController {
     
     var dateFormatter = DateFormatter()
     
-    @IBOutlet weak var classificationIconImageView: UIImageView!
 
+    @IBOutlet weak var classificationIconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,7 @@ class FieldObservationDetailViewController: UIViewController {
         classificationIconImageView.image = fieldObservation?.classification.image
         titleLabel.text = fieldObservation?.title
         descriptionLabel.text = fieldObservation?.description
+        
         if let date = fieldObservation?.date {
             dateLabel.text = dateFormatter.string(from: date)
         } else {

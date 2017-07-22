@@ -10,8 +10,9 @@ import UIKit
 
 class FieldObservationTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
+ 
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var classificationIconImageView: UIImageView!
     
     override func awakeFromNib() {

@@ -15,12 +15,12 @@
 		D58A47C71F22E3B800470FBD /* Field_SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A47C61F22E3B800470FBD /* Field_SurveyUITests.swift */; };
 		D58A47DA1F22E78200470FBD /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = D58A47D91F22E78200470FBD /* field_observations.json */; };
 		D58A47DC1F22E94700470FBD /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A47DB1F22E94700470FBD /* Classification.swift */; };
-		D58A47DE1F22EFDE00470FBD /* FieldObservations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A47DD1F22EFDE00470FBD /* FieldObservations.swift */; };
 		D58A47E01F22F27300470FBD /* FieldObservationsJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A47DF1F22F27300470FBD /* FieldObservationsJSONParser.swift */; };
 		D58A47E21F22F8B200470FBD /* FieldObservationsJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A47E11F22F8B200470FBD /* FieldObservationsJSONLoader.swift */; };
 		D58A47E41F22FC6A00470FBD /* FieldObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A47E31F22FC6A00470FBD /* FieldObservationsViewController.swift */; };
 		D58A47E61F22FCD500470FBD /* FieldObservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A47E51F22FCD500470FBD /* FieldObservationDetailViewController.swift */; };
 		D58A47E81F23090C00470FBD /* FieldObservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A47E71F23090C00470FBD /* FieldObservationTableViewCell.swift */; };
+		D58A47EA1F23A7A500470FBD /* FieldObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A47E91F23A7A500470FBD /* FieldObservation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +55,12 @@
 		D58A47C81F22E3B800470FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D58A47D91F22E78200470FBD /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
 		D58A47DB1F22E94700470FBD /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
-		D58A47DD1F22EFDE00470FBD /* FieldObservations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldObservations.swift; sourceTree = "<group>"; };
 		D58A47DF1F22F27300470FBD /* FieldObservationsJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldObservationsJSONParser.swift; sourceTree = "<group>"; };
 		D58A47E11F22F8B200470FBD /* FieldObservationsJSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldObservationsJSONLoader.swift; sourceTree = "<group>"; };
 		D58A47E31F22FC6A00470FBD /* FieldObservationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldObservationsViewController.swift; sourceTree = "<group>"; };
 		D58A47E51F22FCD500470FBD /* FieldObservationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldObservationDetailViewController.swift; sourceTree = "<group>"; };
 		D58A47E71F23090C00470FBD /* FieldObservationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldObservationTableViewCell.swift; sourceTree = "<group>"; };
+		D58A47E91F23A7A500470FBD /* FieldObservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldObservation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,9 +147,9 @@
 			children = (
 				D58A47D91F22E78200470FBD /* field_observations.json */,
 				D58A47DB1F22E94700470FBD /* Classification.swift */,
-				D58A47DD1F22EFDE00470FBD /* FieldObservations.swift */,
 				D58A47DF1F22F27300470FBD /* FieldObservationsJSONParser.swift */,
 				D58A47E11F22F8B200470FBD /* FieldObservationsJSONLoader.swift */,
+				D58A47E91F23A7A500470FBD /* FieldObservation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,8 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D58A47A71F22E3B800470FBD /* AppDelegate.swift in Sources */,
+				D58A47EA1F23A7A500470FBD /* FieldObservation.swift in Sources */,
 				D58A47E81F23090C00470FBD /* FieldObservationTableViewCell.swift in Sources */,
-				D58A47DE1F22EFDE00470FBD /* FieldObservations.swift in Sources */,
 				D58A47E41F22FC6A00470FBD /* FieldObservationsViewController.swift in Sources */,
 				D58A47E01F22F27300470FBD /* FieldObservationsJSONParser.swift in Sources */,
 				D58A47E61F22FCD500470FBD /* FieldObservationDetailViewController.swift in Sources */,

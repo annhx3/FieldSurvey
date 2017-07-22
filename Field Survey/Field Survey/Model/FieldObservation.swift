@@ -1,8 +1,8 @@
 //
-//  FieldObservations.swift
+//  FieldObservation.swift
 //  Field Survey
 //
-//  Created by Alyssa Nielsen on 7/21/17.
+//  Created by Alyssa Nielsen on 7/22/17.
 //  Copyright © 2017 Alyssa Nielsen. All rights reserved.
 //
 

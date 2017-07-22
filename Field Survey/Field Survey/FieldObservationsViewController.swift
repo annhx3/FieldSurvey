@@ -10,7 +10,10 @@ import UIKit
 
 class FieldObservationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
+   
     @IBOutlet weak var fieldObservationsTableView: UITableView!
+    
     let fieldObservations = FieldObservationsJSONLoader.load(fileName: "field_observations")
     
     let dateFormatter = DateFormatter()
@@ -45,6 +48,7 @@ class FieldObservationsViewController: UIViewController, UITableViewDelegate, UI
             cell.titleLabel.text = fieldObservation.title
             cell.dateLabel.text = dateFormatter.string(from: fieldObservation.date)
         }
+        
         return cell
     }
     
