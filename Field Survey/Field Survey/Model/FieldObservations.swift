@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct FieldObservation{
+struct FieldObservation {
     let classification: Classification
     let title: String
     let description: String
@@ -21,8 +21,8 @@ struct FieldObservation{
         self.date = date
     }
     
-    init?(classification: String, title: String, description: String, date: Date){
-        if let classification = Classification(rawValue: classification){
+    init?(classificationName: String, title: String, description: String, date: Date){
+        if let classification = Classification(rawValue: classificationName){
             self.init(classification: classification, title: title, description: description, date: date)
         }else{
             return nil

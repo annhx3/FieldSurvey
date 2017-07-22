@@ -22,16 +22,16 @@ class FieldObservationsJSONParser{
             let status = root["status"] as? String,
             status == "ok"{
             
-                if let observations = root["events"] as? [Any] {
+                if let observations = root["observations"] as? [Any] {
                 for observation in observations {
                     if let observation = observation as? [String: String]{
-                        if let classification = observation["classification"],
+                        if let classificationName = observation["classification"],
                            let title = observation["title"],
                            let description = observation["description"],
                            let dateString = observation["date"],
                            let date = dateFormatter.date(from: dateString){
                             
-                            if let fieldObservation = FieldObservation(classification: classification, title: title, description: description, date: date){
+                            if let fieldObservation = FieldObservation(classificationName: classificationName, title: title, description: description, date: date){
                                 fieldObservations.append(fieldObservation)
                             }
                         }
